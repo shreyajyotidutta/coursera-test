@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma, sans-serif;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 175%;
+    margin-bottom: 10px;
+}
+
+.box{
+    border: 2px solid #000;
+    background-color: #999;
+    margin: 5px;
+    position: relative;
+}
+
+.box h4{
+    font-size: 125%;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+}
+
+h4.chicken{
+    background-color: #c78c8c;
+    text-align: center;
+}
+
+h4.mutton{
+    background-color: #b12f2f;
+    text-align: center;
+    color: #fff;
+}
+
+h4.sushi{
+    background-color: #ecec95;
+    text-align: center;
+}
+
+.box p{
+    padding: 5px;
+    margin: 30px 10px 0px;
+    text-align: justify;
+}
+
+.fix{
+    clear: both;
+}
+
+/* Media queries for large screen */
+
+@media (min-width: 992px){
+    .col-lg-4{
+        float: left;
+        width: 33.33%;     
+    }
+}
+
+/* End of Media queries for large screen */
+
+/* Media queries for medium screen */
+
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-6{
+        float: left;
+        width: 50%;
+    }
+    .col-md-12{
+        float: left;
+        width: 100%;
+    }
+}
+
+/* End of Media queries for medium screen */
+
+/* Media queries for small screen */
+
+@media (max-width: 767px){
+    .col-sm-12{
+        float: left;
+        width: 100%;
+    }
+}
+
+/* End of Media queries for small screen */
